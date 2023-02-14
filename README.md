@@ -33,7 +33,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 <img src="https://i.imgur.com/pALmWhj.png" height="65%" width="65%" alt="Resource Group Creation"/>
 </p>
-<p>----------------------------------------------------------------------------------------------------------------------------------</p>
+<p>---------------------------------------------------------------------------------------------------------------------------------</p>
 <br />
 
 <p>
@@ -42,7 +42,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 <img src="https://i.imgur.com/ESu8MRo.png" height="65%" width="65%" alt="Virtual Machine Creation"/>
 </p>
-<p>----------------------------------------------------------------------------------------------------------------------</p>
+<p>---------------------------------------------------------------------------------------------------------------------------------</p>
 <br />
 
 <p>
@@ -51,7 +51,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 <img src="https://i.imgur.com/DSWvhtp.png" height="50%" width="50%" alt="Copying The Public IP Address"/>
 </p>
-<p>----------------------------------------------------------------------------------------------------------------------</p>
+<p>---------------------------------------------------------------------------------------------------------------------------------</p>
 <br />
 
 <p>
@@ -60,7 +60,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 <img src="https://i.imgur.com/fdCwwuL.png" height="40%" width="40%" alt="Remote Desktop Credentials"/>
 </p>
-<p>----------------------------------------------------------------------------------------------------------------------</p>
+<p>---------------------------------------------------------------------------------------------------------------------------------</p>
 <br />
 
 <p>
@@ -69,6 +69,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 <img src="https://i.imgur.com/GioUyjV.png" height="40%" width="40%" alt="Enable IIS and CGI"/>
 </p>
-<p>----------------------------------------------------------------------------------------------------------------------</p>
+<p>---------------------------------------------------------------------------------------------------------------------------------</p>
 <br />
 
