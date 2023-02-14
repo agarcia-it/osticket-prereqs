@@ -85,7 +85,7 @@ d. Download the file named "php-7.3.8-nts-Win32-VC15-x86.zip". Unzip the content
 <br />
 e. Download and install "VC_redist.x86.exe" with default settings.
 <br />
-f. Download and install "mysql-5.5.62-win32.msi" with default settings. Upon clicking "Finish", MySql will open a new configuration prompt where you will create a password for the MySql root. Choose "Standar Configuration" and make sure to remember the password you choose for future use.
+f. Download and install "mysql-5.5.62-win32.msi" with default settings. Upon clicking "Finish", MySql will open a new configuration prompt where you will create a password for the MySQL username "root". Choose "Standard Configuration" and make sure to remember the password you choose because it will be needed later.
 <br />
 g. Open Internet Information Services (IIS) as an administrator. Double-click "PHP Manager" and select "Register new PHP version". A prompt will appear asking you to select the path to the executable file "php-cgi.exe". It should be found in under the C:\PHP directory that was created earlier. Select the "php-cgi.exe" file and press OK. Return back to the IIS main page and click "restart" to restart the web server.
 <br /><br />
@@ -131,7 +131,7 @@ b. Now we will set permissions on the file so that anyone using osTicket on this
 
 <p>
 9.) This step will be used to create the credentials for osTicket. <br />
-Open IIS as an administrator and navigate to: Sites -> Default Website -> osTicket. On the right side, click the linke titled "Browse *:80 (http)". If everything has been done correctly up to this point, the link will open the osTicket web interface. Click "Continue" on the osTicket web interface. Enter credentials up to the "Database Settings" portion. (note that you do not have to use any real credentials for this step. However, it would be helpful to store this information in case it is needed at any point).
+Open IIS as an administrator and navigate to: Sites -> Default Website -> osTicket. On the right side, click the linke titled "Browse *:80 (http)". If everything has been done correctly up to this point, the link will open the osTicket web interface. Click "Continue" on the osTicket web interface. Enter credentials up to the "Database Settings" portion (we will return to fill out the rest in a later step) and do not close the osTicket web interface. (note that you do not have to use any real credentials for this step. However, it would be helpful to store this information in case it is needed at any point).
 </p>
 <img src="https://i.imgur.com/HvJ0ngb.png" height="60%" width="60%" alt="osTicket Credential Page">
 </p>
@@ -139,4 +139,45 @@ Open IIS as an administrator and navigate to: Sites -> Default Website -> osTick
 <br />
 
 <p>
-10.) 
+10.) <br/><br />
+a. From the Installation Files link, download and install the file called "HeidiSQL_12.3.0.65.89_Setup.exe" using default settings. Launch the program when the installation is complete. This program (HeidiSQL) acts as a database client, which will connects to and interact with osTicket.
+<br /><br />
+b. In HeidiSQL, click "New" on the bottom-left. This step will require the login credentials that we created in step 6f of this tutorial (username "root", and the password you chose). Click "Open" after entering credentials.
+<br /><br />
+<img src="https://i.imgur.com/IvPbBZH.png" height="60%" width="60%" alt="HeidiSQL Setup">
+<br /><br />
+c. In the left side of HeidiSQL: right-click -> hover over "New" -> select "Database". Name the database "osTicket" and click "OK".
+<br /><br />
+<img src="https://i.imgur.com/5eOS2ak.png" height="60%" width="60%" alt="HeidiSQL Setup">
+</p>
+<p>---------------------------------------------------------------------------------------------------------------------------------</p>
+<br />
+
+<p>
+11.) Return to the osTicket web interface and continue filling out the credentials for the "Database Settings" section. "MySQL Database" will be called "osTicket" (the one we created in Heidi in the previous step), the username is "root", and password is the password that was used in step 6f. <br /><br />
+<img src="https://i.imgur.com/pLs5got.png" height="60%" width="60%" alt="osTicket Database Settings">
+<br /><br />
+If everything was installed successfully, your screen should look like this: <br /><br />
+<img src="https://i.imgur.com/zjfSyPv.png" height="60%" width="60%" alt="osTicket Successful Installation">
+</p>
+<p>---------------------------------------------------------------------------------------------------------------------------------</p>
+<br />
+
+<p>
+12.) Now there is just some cleanup to do before the osTicket installation and configuration is complete.
+<br /><br />
+a. In the Windows File Explorer, navigate to: C:\inetpub\wwwroot\osTicket\ and <strong>delete</strong> the "setup" folder.
+<br /><br />
+b. Now we will change the permissions in the "ost-config.php" file back to Read Only. Navigate to the C:\inetpub\wwwroot\osTicket\include\ directory and find the "ost-config.php" file. Right-click -> Properties -> Security -> Advanced -> highlight Everyone -> Click edit. Uncheck the "Full Control", "Modify", and "Write" boxes so that only "Read" and "Read & execute" are checked. Click OK -> Apply -> OK -> OK.
+<br /><br />
+<img src="https://i.imgur.com/2aYU8Gn.png" height="60%" width="60%" alt="Reset ost-config.php Permissions to Read Only">
+</p>
+<p>---------------------------------------------------------------------------------------------------------------------------------</p>
+<br />
+
+<p>
+13.) Use this link <a href="http://localhost/osTicket/scp/login.php">http://localhost/osTicket/scp/login.php</a> to log into the osTicket web client using the "Admin User" login credentials that were created in step 9. If your login was successful, your sreen will look like this:
+<br /><br />
+<img src="https://i.imgur.com/F2CLDQS.png" height="60%" width="60%" alt="Successful osTicket Login">
+<br /><br />
+Congratulations on a successful installation, configuration, and login to osTicket!
