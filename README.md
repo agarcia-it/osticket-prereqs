@@ -33,7 +33,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 <img src="https://i.imgur.com/pALmWhj.png" height="65%" width="65%" alt="Resource Group Creation"/>
 </p>
-<p>----------------------------------------------------------------------------------------------------------------------</p>
+<p>--------------------------------------------------------------------------------------------------------------------------------</p>
 <br />
 
 <p>
