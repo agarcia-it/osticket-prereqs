@@ -15,13 +15,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Windows 10</b> (21H2)
 
+<h2>Installation Files</h2>
+- https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
+
 <h2>List of Prerequisites</h2>
 
+- Internet connection
 - Microsoft Azure tenant and subscription
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Microsoft Remote Desktop
+- Ability to download and install files to a Windows machine
 
 <h2>Installation Steps</h2>
 
@@ -57,6 +59,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
 <img src="https://i.imgur.com/fdCwwuL.png" height="40%" width="40%" alt="Remote Desktop Credentials"/>
+</p>
+<p>--------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<br />
+
+<p>
+5.) *From this step on we will be working within the virtual machine via Remote Desktop Protocol.* First we must install Windows IIS (Internet Information Services) on our Azure virtual machine. IIS allows our vm to serve up websites, which is necessary because osTicket runs out of a web browser. We will also Install CGI which allows us to install PHP manager which is used to run osTicket. To do so, navigate to Control Panel -> Programs -> Turn Windows features on or off -> enable Internet Information Services (expand) -> (expand) World Wide Web Services -> (expand) Application Development Features -> enable CGI. -> click OK.
+</p>
+<p>
+<img src="https://i.imgur.com/GioUyjV.png" height="40%" width="40%" alt="Enable IIS and CGI"/>
 </p>
 <p>--------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 <br />
