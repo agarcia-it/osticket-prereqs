@@ -147,11 +147,11 @@ a. From the Installation Files link, download and install the file called "Heidi
 <br /><br />
 b. In HeidiSQL, click "New" on the bottom-left. This step will require the login credentials that we created in step 6f of this tutorial (username "root", and the password you created). Click "Open" after entering credentials.
 <br /><br />
-<img src="https://i.imgur.com/IvPbBZH.png" height="60%" width="60%" alt="HeidiSQL Setup">
+<img src="https://i.imgur.com/IvPbBZH.png" height="60%" width="60%" alt="HeidiSQL Setup 1">
 <br /><br />
 c. In the left side of HeidiSQL: right-click -> hover over "New" -> select "Database". Name the database "osTicket" and click "OK".
 <br /><br />
-<img src="https://i.imgur.com/5eOS2ak.png" height="60%" width="60%" alt="HeidiSQL Setup">
+<img src="https://i.imgur.com/5eOS2ak.png" height="60%" width="60%" alt="HeidiSQL Setup 2">
 </p>
 <p>---------------------------------------------------------------------------------------------------------------------------------</p>
 <br />
